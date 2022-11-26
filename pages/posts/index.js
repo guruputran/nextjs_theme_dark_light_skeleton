@@ -17,6 +17,12 @@ export default function Index() {
         <li>
           <Link href="/posts/C">sample post C</Link>
         </li>
+        <li>
+          <Link href="/posts/AB">sample post AB</Link>
+        </li>
+        <li>
+          <Link href="/posts/AC">sample post AC</Link>
+        </li>
       </ul>
     </div>
   );
