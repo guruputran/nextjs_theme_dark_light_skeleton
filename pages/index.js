@@ -9,6 +9,8 @@ import { Container, Grid } from "@mui/material";
 export async function getServerSideProps() {
   // get all the todos, https://sweetcode.io/how-to-implement-material-ui-with-next-js/
   //https://dev.to/hajhosein/nextjs-mui-v5-tutorial-2k35#step-four
+  //https://www.telerik.com/blogs/routing-nextjs for routing
+
   let todos_path = join(__dirname, "..", "..", "..", "data", "todos.json");
   let todos = await fs.promises.readFile(todos_path, "utf8");
   return {
