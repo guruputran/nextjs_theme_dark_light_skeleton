@@ -1,7 +1,7 @@
 /** @format */
 
 import { useRouter } from "next/router";
-import styles from "../../styles/Home.module.css";
+import styles from "@styles/Home.module.css";
 export default function Post() {
   const router = useRouter();
   const data = router.query;

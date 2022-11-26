@@ -1,11 +1,10 @@
 /** @format */
 
-import Head from "next/head";
 import fs from "fs";
 import { join } from "path";
-import Navbar from "@components/Navbar";
 import Card from "@components/Card";
 import { Container, Grid } from "@mui/material";
+
 export async function getServerSideProps() {
   // get all the todos, https://sweetcode.io/how-to-implement-material-ui-with-next-js/
   //https://dev.to/hajhosein/nextjs-mui-v5-tutorial-2k35#step-four
@@ -21,14 +20,10 @@ export async function getServerSideProps() {
 }
 export default function Home({ todos }) {
   return (
-    <div>
-      <Head>
-        <title>Todos App</title>
-        <meta name="description" content="Todos app with Material UI" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <Navbar />
+    <>
+      <title>Todos App</title>
+      <meta name="description" content="Todos app with Material UI" />
+      <link rel="icon" href="/favicon.ico" />
 
       <Container>
         {todos.length > 0 ? (
@@ -41,6 +36,6 @@ export default function Home({ todos }) {
           <p>No saved todos yet!!</p>
         )}
       </Container>
-    </div>
+    </>
   );
 }
