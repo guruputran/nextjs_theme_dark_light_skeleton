@@ -8,6 +8,7 @@ import createEmotionCache from "../utility/createEmotion";
 //import darkTheme from "../styles/theme/darkTheme";
 import theme from "../styles/theme/customTheme";
 import "../styles/globals.css";
+import Header from "@components/Header";
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -18,6 +19,7 @@ const MyApp = (props) => {
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <Header />
         <Component {...pageProps} />
       </ThemeProvider>
     </CacheProvider>
