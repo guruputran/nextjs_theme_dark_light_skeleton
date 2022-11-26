@@ -26,7 +26,7 @@ const Navbar = () => {
     setAnchorElNav(null);
   };
   return (
-    <AppBar position="static">
+    <AppBar color="bsn" position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />

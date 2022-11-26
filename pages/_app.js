@@ -5,7 +5,8 @@ import PropTypes from "prop-types";
 import { CacheProvider } from "@emotion/react";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 import createEmotionCache from "../utility/createEmotion";
-import darkTheme from "../styles/theme/darkTheme";
+//import darkTheme from "../styles/theme/darkTheme";
+import theme from "../styles/theme/customTheme";
 import "../styles/globals.css";
 
 const clientSideEmotionCache = createEmotionCache();
@@ -15,7 +16,7 @@ const MyApp = (props) => {
 
   return (
     <CacheProvider value={emotionCache}>
-      <ThemeProvider theme={darkTheme}>
+      <ThemeProvider theme={theme}>
         <CssBaseline />
         <Component {...pageProps} />
       </ThemeProvider>
